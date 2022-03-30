@@ -1,0 +1,3 @@
+insert into books (author, isbn, publisher, title, type) VALUES ('Adam Mickiewicz', '1234563454', 'Agora', 'Pan Tadeusz', 'poemat epicki');
+insert into books (author, isbn, publisher, title, type) VALUES ('Henryk Sienkiewicz', '4739547475', 'Helion', 'Ogniem i mieczem', 'powieść historyczna');
+insert into books (author, isbn, publisher, title, type) VALUES ('Remigiusz Mróz', '3566756345', 'Czarne', 'Behawiorysta', 'powieść kryminalna');
