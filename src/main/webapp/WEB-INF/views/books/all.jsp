@@ -22,11 +22,16 @@
         <td>${book.id}</td>
         <td>${book.title}</td>
         <td>${book.author}</td>
-            <td><a href="/book/${book.id}">Szczegóły</a></td>
+        <td><a href="/book/${book.id}">Szczegóły</a></td>
+        <td><a href="/book/edit/${book.id}">Edytuj</a></td>
+        <td><a href="/book/delete/${book.id}"
+            onclick="confirm('Czy na pewno chcesz usunąć ${book.title}?')">Usuń</a> </td>
         </tr>
     </c:forEach>
     </tbody>
 </table>
+<br/><br/><br/>
+<a href="/book/add">Dodaj książkę</a>
 
 </body>
 </html>

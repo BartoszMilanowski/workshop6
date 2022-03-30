@@ -1,15 +1,14 @@
-<%@ page contentType="text/html; charset=UTF-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html; charset=utf-8" %>
 <html>
 <head>
-    <title>Książka</title>
+    <title>${book.title}</title>
 </head>
 <body>
-<h1>${book.id} <i>${book.title}</i></h1>
-Autor: ${book.author}<br/>
+<h1>${book.id} => ${book.title}</h1>
+<h2>Autor: ${book.author}</h2>
+Gatunek: ${book.type}<br/>
 Wydawca: ${book.publisher}<br/>
-Numer ISBN: ${book.isbn}<br/>
-<br/><br/><br/>
-<a href="/">Wróć</a>
+Numer ISBN: ${book.isbn}<br/><br/>
+<a href="/">Wróć do strony głównej</a>
 </body>
 </html>

@@ -25,25 +25,21 @@ public class BookService implements BookServiceInterface{
 
     @Override
     public void add(Book book) {
-
+        bookRepository.save(book);
     }
 
     @Override
     public Optional<Book> get(Long id) {
-        return Optional.empty();
+        return bookRepository.findById(id);
     }
 
     @Override
     public void delete(Long id) {
-
+        bookRepository.deleteBookById(id);
     }
 
     @Override
     public void update(Book book) {
-
-    }
-
-    public Optional<Book> findById(Long id){
-        return bookRepository.findById(id);
+        bookRepository.save(book);
     }
 }
